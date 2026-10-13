@@ -9,6 +9,7 @@
 //   'mp4'     → src: '/media/my-film.mp4'            (file in /public/media)
 //   vertical: true   → plays in a 9:16 player (Reels / TikTok cuts)
 //   label: '...'     → tab name when there are several clips
+//   thumb: '...'     → still for the /gallery grid (720px JPG in /public/media/grid)
 //
 // Source folder: drive.google.com/drive/folders/1rP8FpKNronXmDhZfI5os3_Hqxz2OY3-8
 //
@@ -34,7 +35,7 @@ export const projects = [
     tint: '#3a2a1f',
     poster: '/media/nike.jpg',
     preview: '',
-    video: drive('11aLSQIkM0-Y321s_fvEyRyQZL37Jj_Cy'),
+    video: drive('11aLSQIkM0-Y321s_fvEyRyQZL37Jj_Cy', { thumb: '/media/grid/nike.jpg' }),
   },
   {
     slug: 'light-of-hope',
@@ -48,8 +49,8 @@ export const projects = [
     poster: '/media/loh-catena.jpg',
     preview: '',
     video: [
-      drive('1ZBLTtkslIz0PUNfVraLe0zvgaZqzXOG6', { label: 'Catena Impact' }),
-      drive('1G_L4OfCwxHvQwOFwMaxtcwIWomQ-EP2l', { label: 'Pulangbato' }),
+      drive('1ZBLTtkslIz0PUNfVraLe0zvgaZqzXOG6', { thumb: '/media/grid/loh-catena.jpg', label: 'Catena Impact' }),
+      drive('1G_L4OfCwxHvQwOFwMaxtcwIWomQ-EP2l', { thumb: '/media/grid/loh-pulangbato.jpg', label: 'Pulangbato' }),
     ],
   },
   {
@@ -64,14 +65,14 @@ export const projects = [
     poster: '/media/fox-homes.jpg',
     preview: '',
     video: [
-      drive('1hGZgG8R1BgLVIVwhvtM2jC4AYdY02qgY', { label: 'Treehouse de Valentine' }),
-      drive('1lBF7fbM81JeBHDqcxLmimOYAerRK2zDW', { label: '150 Peakway' }),
-      drive('1MHGjjRcvbPmyYHDeVqGRSdpDdvPJTov2', { label: 'Old Country Stone House' }),
-      drive('10IGZ_NnF4Eyq7YaStRwg0J0oKPJ0Nr8u', { label: 'Monte Alto Villas' }),
-      drive('1QJNr-WYxCJD7amEMEgcPcpY0WHPzhAC8', { label: 'Gray Rock Cabins' }),
-      drive('1oM5XEvdwwE4vjVeNfYrravjEy6-dVKdD', { label: 'Playa Norte' }),
-      drive('1WI_H2Jzhn3tva-994Ts4n9Z3-ED1GtKJ', { label: 'Reefside' }),
-      drive('1WKjqTOeSqGCyFtRmcHU2j85U8CnCFKbV', { label: 'Palalong Paint & Sip' }),
+      drive('1hGZgG8R1BgLVIVwhvtM2jC4AYdY02qgY', { thumb: '/media/grid/fox-treehouse.jpg', label: 'Treehouse de Valentine' }),
+      drive('1lBF7fbM81JeBHDqcxLmimOYAerRK2zDW', { thumb: '/media/grid/fox-peakway.jpg', label: '150 Peakway' }),
+      drive('1MHGjjRcvbPmyYHDeVqGRSdpDdvPJTov2', { thumb: '/media/grid/fox-stonehouse.jpg', label: 'Old Country Stone House' }),
+      drive('10IGZ_NnF4Eyq7YaStRwg0J0oKPJ0Nr8u', { thumb: '/media/grid/fox-montealto.jpg', label: 'Monte Alto Villas' }),
+      drive('1QJNr-WYxCJD7amEMEgcPcpY0WHPzhAC8', { thumb: '/media/grid/fox-grayrock.jpg', label: 'Gray Rock Cabins' }),
+      drive('1oM5XEvdwwE4vjVeNfYrravjEy6-dVKdD', { thumb: '/media/grid/fox-playanorte.jpg', label: 'Playa Norte' }),
+      drive('1WI_H2Jzhn3tva-994Ts4n9Z3-ED1GtKJ', { thumb: '/media/grid/fox-reefside.jpg', label: 'Reefside' }),
+      drive('1WKjqTOeSqGCyFtRmcHU2j85U8CnCFKbV', { thumb: '/media/grid/fox-palalong.jpg', label: 'Palalong Paint & Sip' }),
     ],
   },
   {
@@ -85,7 +86,7 @@ export const projects = [
     tint: '#2b2b33',
     poster: '/media/toyota.jpg',
     preview: '',
-    video: drive('11D0h4g5PWKEgnbnMCDticqVocBe4tX32'),
+    video: drive('11D0h4g5PWKEgnbnMCDticqVocBe4tX32', { thumb: '/media/grid/toyota.jpg' }),
   },
   {
     slug: 'shangri-la-mactan',
@@ -99,9 +100,9 @@ export const projects = [
     poster: '/media/shangri-la-chi.jpg',
     preview: '',
     video: [
-      drive('1tlv_AFAOyffx-Tjq8l09fxtwvqNbVhEM', { label: 'Chi Spa', vertical: true }),
-      drive('1jrWjcCOEDn8niKBzfYD46r3YK6_LTFZM', { label: 'Acqua', vertical: true }),
-      drive('1huf-G7ImvqH5pnAQ6cgUBYguAlUHD-zM', { label: 'Tea of Spring', vertical: true }),
+      drive('1tlv_AFAOyffx-Tjq8l09fxtwvqNbVhEM', { thumb: '/media/grid/shangri-la-chi.jpg', label: 'Chi Spa', vertical: true }),
+      drive('1jrWjcCOEDn8niKBzfYD46r3YK6_LTFZM', { thumb: '/media/grid/shangri-la-acqua.jpg', label: 'Acqua', vertical: true }),
+      drive('1huf-G7ImvqH5pnAQ6cgUBYguAlUHD-zM', { thumb: '/media/grid/shangri-la-tea.jpg', label: 'Tea of Spring', vertical: true }),
     ],
   },
   {
@@ -116,11 +117,11 @@ export const projects = [
     poster: '/media/pets-society.jpg',
     preview: '',
     video: [
-      drive('1GTS8yGGYW6i_S2qhI9ETp9Z5Oqh_uB89', { label: 'Veterinary Feature' }),
-      drive('1LOFYB-iG7GxAvCnV-ZHr5D53thvP-1vL', { label: 'Dog Spa', vertical: true }),
-      drive('1QOovjTmqLBhmBF06CGiuNUztfUjO1dzr', { label: 'Cat Salon', vertical: true }),
-      drive('1VWrWJPI1ZDfRWw9WqqBtUGLVgj3SJbKe', { label: 'Dog Boarding', vertical: true }),
-      drive('1jzwEfpyjBcY_eBynpcVb3b9dpLVedr6Q', { label: 'Cat Boarding', vertical: true }),
+      drive('1GTS8yGGYW6i_S2qhI9ETp9Z5Oqh_uB89', { thumb: '/media/grid/pets-vet.jpg', label: 'Veterinary Feature' }),
+      drive('1LOFYB-iG7GxAvCnV-ZHr5D53thvP-1vL', { thumb: '/media/grid/pets-dog-spa.jpg', label: 'Dog Spa', vertical: true }),
+      drive('1QOovjTmqLBhmBF06CGiuNUztfUjO1dzr', { thumb: '/media/grid/pets-cat-salon.jpg', label: 'Cat Salon', vertical: true }),
+      drive('1VWrWJPI1ZDfRWw9WqqBtUGLVgj3SJbKe', { thumb: '/media/grid/pets-dog-boarding.jpg', label: 'Dog Boarding', vertical: true }),
+      drive('1jzwEfpyjBcY_eBynpcVb3b9dpLVedr6Q', { thumb: '/media/grid/pets-cat-boarding.jpg', label: 'Cat Boarding', vertical: true }),
     ],
   },
   {
@@ -134,7 +135,7 @@ export const projects = [
     tint: '#332b1a',
     poster: '/media/shell.jpg',
     preview: '',
-    video: drive('1MymLaUijbkSynkUG6w4V1gI6TT0k9Dn5'),
+    video: drive('1MymLaUijbkSynkUG6w4V1gI6TT0k9Dn5', { thumb: '/media/grid/shell.jpg' }),
   },
   {
     slug: 'nustar',
@@ -147,7 +148,7 @@ export const projects = [
     tint: '#20202a',
     poster: '/media/nustar.jpg',
     preview: '',
-    video: drive('1I3jjPB9uApKpQEBIU2rZyMAXxxXHgaZd'),
+    video: drive('1I3jjPB9uApKpQEBIU2rZyMAXxxXHgaZd', { thumb: '/media/grid/nustar.jpg' }),
   },
   {
     slug: 'childlink',
@@ -160,7 +161,7 @@ export const projects = [
     tint: '#1f2a33',
     poster: '/media/childlink.jpg',
     preview: '',
-    video: drive('1btaSjgwasbZR4LTtFscPUzjy0eU9IPjD'),
+    video: drive('1btaSjgwasbZR4LTtFscPUzjy0eU9IPjD', { thumb: '/media/grid/childlink.jpg' }),
   },
   {
     slug: 'golds-gym',
@@ -174,12 +175,12 @@ export const projects = [
     poster: '/media/golds-gym.jpg',
     preview: '',
     video: [
-      drive('155ME3f4iQm8FQyqfJbQ7HhCxrGvrxVga', { label: 'Gym Showcase', vertical: true }),
-      drive('1So6K2-VpO2rHcZptunglZb1Iv7NxoeeW', { label: 'Deadlift', vertical: true }),
-      drive('1i5fO0QMj0xvjzoY2AM5s2V7_Wrlh79wJ', { label: 'Squat', vertical: true }),
-      drive('1i7HJvyPWvUfjYEK9T3dLwqNnu1u56Lxq', { label: 'Pull Up', vertical: true }),
-      drive('1u_oxRc1vRbilkNLyYOqT5sFSWP-0WzNm', { label: 'Box Jump', vertical: true }),
-      drive('1aJtOHvBwwnwHzTn4YvnSrygNq8i9_U9U', { label: 'Plank Pull Through', vertical: true }),
+      drive('155ME3f4iQm8FQyqfJbQ7HhCxrGvrxVga', { thumb: '/media/grid/golds-showcase.jpg', label: 'Gym Showcase', vertical: true }),
+      drive('1So6K2-VpO2rHcZptunglZb1Iv7NxoeeW', { thumb: '/media/grid/golds-deadlift.jpg', label: 'Deadlift', vertical: true }),
+      drive('1i5fO0QMj0xvjzoY2AM5s2V7_Wrlh79wJ', { thumb: '/media/grid/golds-squat.jpg', label: 'Squat', vertical: true }),
+      drive('1i7HJvyPWvUfjYEK9T3dLwqNnu1u56Lxq', { thumb: '/media/grid/golds-pullup.jpg', label: 'Pull Up', vertical: true }),
+      drive('1u_oxRc1vRbilkNLyYOqT5sFSWP-0WzNm', { thumb: '/media/grid/golds-boxjump.jpg', label: 'Box Jump', vertical: true }),
+      drive('1aJtOHvBwwnwHzTn4YvnSrygNq8i9_U9U', { thumb: '/media/grid/golds-plank.jpg', label: 'Plank Pull Through', vertical: true }),
     ],
   },
   {
@@ -194,9 +195,9 @@ export const projects = [
     poster: '/media/sol-shop.jpg',
     preview: '',
     video: [
-      drive('1scfzWbFgWbZYr-7Vm4ZHq1nHufooSkQN', { label: 'Shop', vertical: true }),
-      drive('1TFhRVTSoNIfa1U65zLG09hwrHkTTybjw', { label: 'Lashes', vertical: true }),
-      drive('1Q4foVfPQdeTJUALiV2Crz7JI1ScpBftt', { label: 'Manicure', vertical: true }),
+      drive('1scfzWbFgWbZYr-7Vm4ZHq1nHufooSkQN', { thumb: '/media/grid/sol-shop.jpg', label: 'Shop', vertical: true }),
+      drive('1TFhRVTSoNIfa1U65zLG09hwrHkTTybjw', { thumb: '/media/grid/sol-lashes.jpg', label: 'Lashes', vertical: true }),
+      drive('1Q4foVfPQdeTJUALiV2Crz7JI1ScpBftt', { thumb: '/media/grid/sol-manicure.jpg', label: 'Manicure', vertical: true }),
     ],
   },
   {
@@ -211,8 +212,8 @@ export const projects = [
     poster: '/media/amoroso-1.jpg',
     preview: '',
     video: [
-      drive('1EK0pmAv7nq4p82sfldfNAewXBepxpAvG', { label: 'Part 1', vertical: true }),
-      drive('1g3Av86DbxEznLE2ATjKA2YGj2W_Rutg1', { label: 'Part 2', vertical: true }),
+      drive('1EK0pmAv7nq4p82sfldfNAewXBepxpAvG', { thumb: '/media/grid/amoroso-1.jpg', label: 'Part 1', vertical: true }),
+      drive('1g3Av86DbxEznLE2ATjKA2YGj2W_Rutg1', { thumb: '/media/grid/amoroso-2.jpg', label: 'Part 2', vertical: true }),
     ],
   },
 ]

@@ -33,6 +33,7 @@ export default function Nav() {
     ['Work', '#work', `(${projects.length})`],
     ['Studio', '#about'],
     ['Services', '#services'],
+    ['Gallery', '/gallery'],
     ['Contact', '#contact'],
   ]
 

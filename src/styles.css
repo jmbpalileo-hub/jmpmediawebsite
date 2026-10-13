@@ -248,6 +248,61 @@ h1, h2, h3, p { margin: 0; }
 .modal__tabs { display: flex; flex-wrap: wrap; gap: 4px; padding-top: 12px; --ink: #ecebe6; --paper: #0d0d0c; }
 .modal__empty { height: 100%; display: grid; place-content: center; text-align: center; gap: 6px; }
 
+
+/* ───────── Gallery (/gallery) ───────── */
+.ig__top { position: sticky; top: 0; z-index: 20; display: flex; justify-content: space-between; align-items: center; padding: 14px var(--gut); background: rgba(13,13,12,0.82); backdrop-filter: blur(14px); border-bottom: 1px solid var(--line); }
+.ig__back:hover { color: var(--accent); }
+.ig__wrap { width: min(935px, 100%); margin: 0 auto; padding: clamp(24px, 5vw, 48px) 0 80px; }
+
+.ig__profile { display: grid; grid-template-columns: auto 1fr; gap: clamp(20px, 7vw, 96px); align-items: center; padding: 0 var(--gut) clamp(24px, 4vw, 40px); }
+.ig__avatar { width: clamp(84px, 20vw, 150px); aspect-ratio: 1; border-radius: 50%; padding: 4px; background: conic-gradient(from 210deg, var(--accent), #ffb08a, var(--accent)); }
+.ig__avatar span { display: grid; place-items: center; width: 100%; height: 100%; border-radius: 50%; background: var(--paper); color: var(--ink); border: 3px solid var(--ink); font-weight: 700; font-size: clamp(24px, 5vw, 44px); letter-spacing: -0.04em; }
+.ig__info { display: grid; gap: 16px; min-width: 0; }
+.ig__row { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; }
+.ig__handle { margin: 0; font-size: clamp(20px, 2.4vw, 26px); font-weight: 500; letter-spacing: -0.02em; }
+.ig__cta { padding: 9px 18px; }
+.ig__stats { list-style: none; margin: 0; padding: 0; display: flex; gap: clamp(16px, 4vw, 40px); font-size: 15px; }
+.ig__stats b { font-weight: 600; }
+.ig__bio p { margin: 0; font-size: 14px; }
+.ig__name { font-weight: 600; }
+
+.ig__highlights { display: flex; gap: clamp(14px, 3vw, 28px); overflow-x: auto; padding: 4px var(--gut) 20px; scrollbar-width: none; }
+.ig__highlights::-webkit-scrollbar { display: none; }
+.ig__hl { flex: 0 0 auto; display: grid; justify-items: center; gap: 8px; width: clamp(64px, 11vw, 86px); }
+.ig__hl-ring { width: 100%; aspect-ratio: 1; border-radius: 50%; padding: 3px; border: 1px solid var(--line); transition: border-color 0.25s var(--ease); }
+.ig__hl-ring > * { display: grid; place-items: center; width: 100%; height: 100%; border-radius: 50%; object-fit: cover; background: var(--ink-2); }
+.ig__hl-all { font-weight: 600; font-size: 15px; letter-spacing: -0.02em; }
+.ig__hl:hover .ig__hl-ring { border-color: var(--muted); }
+.ig__hl.is-on .ig__hl-ring { border: 2px solid var(--accent); padding: 2px; }
+.ig__hl-label { font-size: 12px; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--muted); }
+.ig__hl.is-on .ig__hl-label { color: var(--fg); }
+
+.ig__tabs { display: flex; justify-content: center; gap: clamp(28px, 8vw, 60px); border-top: 1px solid var(--line); margin: 0 var(--gut); }
+.ig__tab { display: flex; align-items: center; gap: 6px; padding: 16px 0; margin-top: -1px; border-top: 1px solid transparent; color: var(--muted); }
+.ig__tab svg, .ig__type svg { width: 14px; height: 14px; fill: none; stroke: currentColor; stroke-width: 1.6; }
+.ig__tab:hover { color: var(--fg); }
+.ig__tab.is-on { color: var(--fg); border-top-color: var(--fg); }
+
+.ig__grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 3px; }
+.ig__tile { position: relative; display: block; width: 100%; aspect-ratio: 4 / 5; overflow: hidden; background: radial-gradient(90% 70% at 60% 30%, color-mix(in srgb, var(--tint) 100%, #fff 20%), var(--tint) 60%, #0b0b0a); }
+.ig__tile img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s var(--ease); }
+.ig__type { position: absolute; top: 10px; right: 10px; color: #fff; filter: drop-shadow(0 1px 2px rgba(0,0,0,0.6)); }
+.ig__type svg { width: 18px; height: 18px; }
+.ig__hover { position: absolute; inset: 0; display: grid; align-content: end; gap: 2px; padding: 14px; text-align: left; background: linear-gradient(to top, rgba(8,8,7,0.85), rgba(8,8,7,0) 60%); opacity: 0; transition: opacity 0.3s var(--ease); font-size: 15px; font-weight: 500; letter-spacing: -0.01em; line-height: 1.2; }
+.ig__tile:hover .ig__hover, .ig__tile:focus-visible .ig__hover { opacity: 1; }
+.ig__tile:hover img { transform: scale(1.03); }
+.ig__empty { text-align: center; padding: 60px 0; }
+
+@media (max-width: 640px) {
+  .ig__profile { grid-template-columns: auto 1fr; align-items: start; gap: 20px; }
+  .ig__bio { grid-column: 1 / -1; }
+  .ig__tab-label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .ig__tab svg { width: 20px; height: 20px; }
+  .ig__hover { display: none; }
+  .ig__type svg { width: 15px; height: 15px; }
+  .ig__type { top: 6px; right: 6px; }
+}
+
 /* ───────── Responsive ───────── */
 @media (max-width: 1080px) {
   .nav__links, .nav__time { display: none; }

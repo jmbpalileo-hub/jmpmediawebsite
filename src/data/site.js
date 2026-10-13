@@ -39,6 +39,12 @@ export const site = {
   // Full showreel opened by "Watch Reel". Same format as a project's `video`.
   showreel: { provider: 'drive', id: '' },
 
+  // /gallery — the Instagram-style grid you can send to clients.
+  gallery: {
+    handle: 'jmp.media',
+    bio: ['Video production · Brisbane & Cebu', 'Brand films, commercials, events and reels.'],
+  },
+
   clients: [
     'Nike Philippines',
     'Shell Philippines',
