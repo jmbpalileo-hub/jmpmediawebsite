@@ -58,6 +58,8 @@ export const site = {
     'Childlink',
     'U&I Global',
     'Sol Beauty',
+    'Mooink',
+    'Gojip',
     'Amoroso',
   ],
 

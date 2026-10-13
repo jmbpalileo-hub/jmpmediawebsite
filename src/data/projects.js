@@ -19,7 +19,7 @@
 // year / summary: optional — hidden when empty.
 // ─────────────────────────────────────────────────────────────
 
-export const categories = ['All', 'Brand Film', 'Commercial', 'Event', 'Social']
+export const categories = ['All', 'Brand Film', 'Commercial', 'Event', 'Food', 'Social']
 
 const drive = (id, extra = {}) => ({ provider: 'drive', id, ...extra })
 
@@ -201,10 +201,36 @@ export const projects = [
     ],
   },
   {
+    slug: 'mooink',
+    client: 'Mooink',
+    title: 'Restaurant Feature',
+    category: 'Food',
+    year: 2026,
+    summary: '',
+    roles: ['Camera', 'Edit'],
+    tint: '#331f22',
+    poster: '/media/mooink.jpg',
+    preview: '',
+    video: drive('1JdPDlEBA2WetPQm8__7Sf-A284-CjLVD', { thumb: '/media/grid/mooink.jpg', vertical: true }),
+  },
+  {
+    slug: 'gojip',
+    client: 'Gojip',
+    title: 'Restaurant Feature',
+    category: 'Food',
+    year: 2026,
+    summary: '',
+    roles: ['Camera', 'Edit'],
+    tint: '#1c2627',
+    poster: '/media/gojip.jpg',
+    preview: '',
+    video: drive('1MkvNFBdywIgpgwXaaW_KVNESaPbhcFJ9', { thumb: '/media/grid/gojip.jpg', vertical: true }),
+  },
+  {
     slug: 'amoroso',
     client: 'Amoroso',
     title: 'Gelato and Dishes Feature',
-    category: 'Social',
+    category: 'Food',
     year: '',
     summary: '',
     roles: ['Camera', 'Edit'],
