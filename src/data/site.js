@@ -60,6 +60,7 @@ export const site = {
     'Sol Beauty',
     'Mooink',
     'Gojip',
+    'Foods of Cebu',
     'Amoroso',
   ],
 

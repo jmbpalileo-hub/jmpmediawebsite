@@ -203,7 +203,7 @@ export const projects = [
   {
     slug: 'mooink',
     client: 'Mooink',
-    title: 'Restaurant Feature',
+    title: 'KBBQ Meat Specials',
     category: 'Food',
     year: 2026,
     summary: '',
@@ -216,7 +216,7 @@ export const projects = [
   {
     slug: 'gojip',
     client: 'Gojip',
-    title: 'Restaurant Feature',
+    title: 'All You Can Eat Buffet Feature',
     category: 'Food',
     year: 2026,
     summary: '',
@@ -225,6 +225,25 @@ export const projects = [
     poster: '/media/gojip.jpg',
     preview: '',
     video: drive('1MkvNFBdywIgpgwXaaW_KVNESaPbhcFJ9', { thumb: '/media/grid/gojip.jpg', vertical: true }),
+  },
+  {
+    slug: 'foods-of-cebu',
+    client: 'Foods of Cebu',
+    title: 'Signature Dish Features',
+    category: 'Food',
+    year: 2023,
+    summary: 'Short vertical food features for Cebu restaurants.',
+    roles: ['Camera', 'Edit'],
+    tint: '#33291a',
+    poster: '/media/foods-of-cebu.jpg',
+    preview: '',
+    video: [
+      drive('1WrtZEi-Wypfp-udWsf_SgmWrNlhKx0VO', { thumb: '/media/grid/foc-dahun.jpg', label: 'Dahun Cafe', vertical: true }),
+      drive('1mqJClfDWy5nA1aNHEuw0jcAeR-U-yhsp', { thumb: '/media/grid/foc-yanghero.jpg', label: 'Yang Hero', vertical: true }),
+      drive('1ixPK2wuPZ0oLDIiD6oYhz18FIG95EDWf', { thumb: '/media/grid/foc-ajthai.jpg', label: 'AJ Thai', vertical: true }),
+      drive('1_bXoe8g4L_Jt6_ssLLZeqxy5Ta-eJmxf', { thumb: '/media/grid/foc-ajthai-menu.jpg', label: 'AJ Thai New Menu', vertical: true }),
+      drive('1Y6eNzmsqWpDx-zN-yUCvJCd2fo0PUtzc', { thumb: '/media/grid/foc-kumi.jpg', label: 'Kumi', vertical: true }),
+    ],
   },
   {
     slug: 'amoroso',
