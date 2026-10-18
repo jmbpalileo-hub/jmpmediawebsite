@@ -36,7 +36,8 @@ export const site = {
   },
 
   // Full showreel opened by "Watch Reel". Same format as a project's `video`.
-  showreel: { provider: 'mp4', src: '/media/showreel.mp4' },
+  // Hidden while the reel is in draft. To show the button again, set src to '/media/showreel.mp4'.
+  showreel: { provider: 'mp4', src: '' },
 
   // /gallery — the Instagram-style grid you can send to clients.
   gallery: {
