@@ -10,8 +10,7 @@ export const site = {
   timezone: 'Australia/Brisbane',
   since: 2018,
 
-  // TODO: replace with your real business email before deploying
-  email: 'hello@jmpmedia.com.au',
+  email: 'media@paliportfolio.com',
   instagram: 'https://instagram.com/',
   vimeo: 'https://vimeo.com/',
   linkedin: 'https://linkedin.com/',
