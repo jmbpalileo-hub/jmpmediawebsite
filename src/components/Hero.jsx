@@ -4,6 +4,9 @@ import { hasVideo } from './media'
 
 function Reel() {
   const r = site.heroReel
+  const still = typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches
+  if (r.type === 'mp4' && r.src && still && r.poster)
+    return <img className="hero__reel" src={r.poster} alt="" />
   if (r.type === 'mp4' && r.src)
     return <video className="hero__reel" src={r.src} poster={r.poster || undefined} autoPlay muted loop playsInline preload="metadata" />
   if (r.type === 'vimeo' && r.src)

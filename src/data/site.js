@@ -31,13 +31,13 @@ export const site = {
   // Hero background reel. Best option: a 10–20s muted MP4 in /public/media.
   // type: 'mp4' | 'vimeo' | 'youtube' | 'none'
   heroReel: {
-    type: 'none',
-    src: '', // e.g. '/media/showreel-loop.mp4'  or Vimeo ID '123456789'
-    poster: '', // e.g. '/media/showreel-poster.jpg'
+    type: 'mp4',
+    src: '/media/showreel-loop.mp4', // muted, no audio track
+    poster: '/media/showreel-poster.jpg',
   },
 
   // Full showreel opened by "Watch Reel". Same format as a project's `video`.
-  showreel: { provider: 'drive', id: '' },
+  showreel: { provider: 'mp4', src: '/media/showreel.mp4' },
 
   // /gallery — the Instagram-style grid you can send to clients.
   gallery: {
