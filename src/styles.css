@@ -70,6 +70,7 @@ h1, h2, h3, p { margin: 0; }
 .nav__bar { display: grid; grid-template-columns: 1fr auto auto auto; align-items: center; gap: 28px; padding: 14px var(--gut); }
 .nav__logo { font-weight: 700; font-size: 18px; letter-spacing: -0.02em; }
 .nav__logo sup { font-size: 9px; margin-left: 1px; }
+.nav__logo-img { display: block; height: 36px; width: auto; }
 .nav__logo-sub { font-weight: 400; color: var(--muted); }
 .nav__links { display: flex; gap: 28px; }
 .nav__links a { position: relative; }
@@ -256,7 +257,8 @@ h1, h2, h3, p { margin: 0; }
 
 .ig__profile { display: grid; grid-template-columns: auto 1fr; gap: clamp(20px, 7vw, 96px); align-items: center; padding: 0 var(--gut) clamp(24px, 4vw, 40px); }
 .ig__avatar { width: clamp(84px, 20vw, 150px); aspect-ratio: 1; border-radius: 50%; padding: 4px; background: conic-gradient(from 210deg, var(--accent), #ffb08a, var(--accent)); }
-.ig__avatar span { display: grid; place-items: center; width: 100%; height: 100%; border-radius: 50%; background: var(--paper); color: var(--ink); border: 3px solid var(--ink); font-weight: 700; font-size: clamp(24px, 5vw, 44px); letter-spacing: -0.04em; }
+.ig__avatar span { display: grid; place-items: center; width: 100%; height: 100%; border-radius: 50%; background: var(--paper); color: var(--ink); border: 3px solid var(--ink); }
+.ig__avatar img { width: 72%; height: auto; transform: translateY(4%); }
 .ig__info { display: grid; gap: 16px; min-width: 0; }
 .ig__row { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; }
 .ig__handle { margin: 0; font-size: clamp(20px, 2.4vw, 26px); font-weight: 500; letter-spacing: -0.02em; }

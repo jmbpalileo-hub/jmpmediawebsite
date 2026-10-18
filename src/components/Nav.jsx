@@ -41,7 +41,7 @@ export default function Nav() {
     <header className={`nav ${scrolled ? 'is-scrolled' : ''} ${open ? 'is-open' : ''}`}>
       <div className="nav__bar">
         <a href="#top" className="nav__logo" onClick={() => setOpen(false)}>
-          {site.brand}<sup>®</sup> <span className="nav__logo-sub">Media</span>
+          <img src={site.logo.light} alt={site.brandFull} className="nav__logo-img" />
         </a>
         <nav className="nav__links" aria-label="Primary">
           {links.map(([label, href, count]) => (

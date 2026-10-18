@@ -5,6 +5,8 @@
 export const site = {
   brand: 'JMP',
   brandFull: 'JMP Media',
+  // Official script mark, transparent PNGs in /public/media
+  logo: { light: '/media/logo-white.png', dark: '/media/logo-ink.png' },
   director: 'JM Palileo',
   city: 'Brisbane',
   timezone: 'Australia/Brisbane',

@@ -58,14 +58,14 @@ export default function Gallery() {
     <div className="ig">
       <header className="ig__top">
         <a href="/" className="nav__logo">
-          {site.brand}<sup>®</sup> <span className="nav__logo-sub">Media</span>
+          <img src={site.logo.light} alt={site.brandFull} className="nav__logo-img" />
         </a>
         <a href="/" className="mono ig__back">Full site <span aria-hidden>→</span></a>
       </header>
 
       <main className="ig__wrap">
         <section className="ig__profile">
-          <div className="ig__avatar" aria-hidden><span>JM</span></div>
+          <div className="ig__avatar" aria-hidden><span><img src={site.logo.dark} alt="" /></span></div>
           <div className="ig__info">
             <div className="ig__row">
               <h1 className="ig__handle">{site.gallery.handle}</h1>
